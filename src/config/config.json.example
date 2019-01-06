@@ -1,0 +1,12 @@
+{
+    "books": {
+        "host": "localhost",
+        "port": "5432",
+        "user": "postgres",
+        "password": "",
+        "database": "books"
+    },
+    "service": {
+        "port": "8018"
+    }
+}
