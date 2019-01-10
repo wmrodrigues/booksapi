@@ -4,9 +4,9 @@
         "port": "5432",
         "user": "postgres",
         "password": "",
-        "database": "books"
+        "database": "library"
     },
     "service": {
-        "port": "8018"
+        "port": ":8081"
     }
 }

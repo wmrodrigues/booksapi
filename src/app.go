@@ -14,6 +14,7 @@ func initRoutes() {
 
 	app.Router.HandleFunc("/heartbeat", controllers.Heartbeat).Methods("GET")
 	app.Router.HandleFunc("/", controllers.GetPaged).Methods("GET")
+	app.Router.HandleFunc("/", controllers.Post).Methods("POST")
 	app.Router.HandleFunc("/{id}", controllers.Get).Methods("GET")
 	app.Router.HandleFunc("/{id}", controllers.Put).Methods("PUT")
 	app.Router.HandleFunc("/{id}", controllers.Delete).Methods("DELETE")

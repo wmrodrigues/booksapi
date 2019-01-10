@@ -19,6 +19,6 @@ func main() {
 	}
 
 	initRoutes()
-	fmt.Println("waiting routes...")
+	fmt.Printf("waiting routes on port %s...\n", config.CONFIG.Service.Port)
 	log.Panic(http.ListenAndServe(config.CONFIG.Service.Port, app.Router))
 }
